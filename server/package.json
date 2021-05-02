@@ -4,6 +4,8 @@
   "description": "Server side rendering project",
   "main": "index.js",
   "scripts": {
+    "dev:run-server": "nodemon build/bundle.js",
+    "dev:run-client": "nodemon public/bundle.js",
     "dev": "npm-run-all --parallel dev:build*",
     "dev:server": "nodemon --watch build --exec \" node build/bundle.js \" ",
     "dev:build-server":  "webpack --config webpack.server.js --watch",
